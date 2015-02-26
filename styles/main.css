@@ -1,0 +1,80 @@
+@import 'helpers.css';
+
+/* TYPOGRAPHY
+-----------------------------------------------------*/
+
+body, a, a:hover { 
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+} 
+
+li.submenu h3 {
+	display: block;
+	color: black;
+}
+
+li.submenu ul a {
+	display: block;
+	font-size: 0.5rem;
+	color: black;
+}
+
+/* HEADER
+-----------------------------------------------------*/
+
+/* Menu
+--------------------------------*/
+
+nav.header {
+	background-color: #4eccb9;
+}
+
+nav.header > ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0 2rem;
+}
+
+nav.header > ul > li > a {padding: 0.8rem;}
+nav.header > ul > li > a:hover {
+	text-decoration: none;
+	border-bottom: 0.5rem solid white;
+	padding-bottom: 0.5rem;
+}
+nav.header ul > li,
+nav.header ul > li > a {
+	font-size: 2.3rem;
+	display: inline-block;
+}
+
+
+/* Sub-Menus
+--------------------------------*/
+
+nav.header > ul > li ul {
+	display: inline-block;
+	position: absolute;
+}
+
+nav.header > ul li ul {
+	width: 400px;
+}
+
+li.submenu,
+li.submenu a {
+	display: block;
+}
+
+li.submenu h3 {
+
+}
+
+nav.header > ul > li > ul {
+	display: none;
+}
