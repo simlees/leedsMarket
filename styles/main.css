@@ -1,9 +1,16 @@
 @import 'helpers.css';
+@import 'stall.css';
+
+body { background: url('../media/images/background/1.jpg') no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		   -moz-background-size: cover;
+ 			 -o-background-size: cover;
+ 				background-size: cover; }
 
 /* TYPOGRAPHY
 -----------------------------------------------------*/
 
-body, a, a:hover { 
+body, a, a:hover, a:active, a:hover { 
 	font-family: 'Noto Sans', sans-serif;
 	color: white;
 }
@@ -13,16 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto', sans-serif;
 } 
 
-li.submenu h3 {
-	display: block;
-	color: black;
-}
+h1 { font-size: 5rem; }
 
-li.submenu ul a {
-	display: block;
-	font-size: 0.5rem;
-	color: black;
-}
 
 /* HEADER
 -----------------------------------------------------*/
@@ -30,25 +29,34 @@ li.submenu ul a {
 /* Menu
 --------------------------------*/
 
-nav.header {
-	background-color: #4eccb9;
+nav#header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 
-nav.header > ul {
+div#top-nav {
+	background-color: #4eccb9;
+	outline: #34b3a0 solid 1px;
+}
+
+div#top-nav > ul,
+div#top-nav > ul > li {
 	list-style-type: none;
 	display: inline-block;
 	margin: 0;
-	padding: 0 2rem;
 }
 
-nav.header > ul > li > a {padding: 0.8rem;}
-nav.header > ul > li > a:hover {
+div#top-nav > ul > li > a {padding: 0.8rem;}
+div#top-nav > ul > li > a:hover,
+div#top-nav > ul > li > a:active,
+div#top-nav > ul > li > a:focus {
 	text-decoration: none;
 	border-bottom: 0.5rem solid white;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.3rem;
+	color: white;
 }
-nav.header ul > li,
-nav.header ul > li > a {
+div#top-nav ul > li > a {
 	font-size: 2.3rem;
 	display: inline-block;
 }
@@ -57,24 +65,24 @@ nav.header ul > li > a {
 /* Sub-Menus
 --------------------------------*/
 
-nav.header > ul > li ul {
-	display: inline-block;
-	position: absolute;
-}
-
-nav.header > ul li ul {
-	width: 400px;
-}
-
-li.submenu,
-li.submenu a {
-	display: block;
-}
-
-li.submenu h3 {
-
-}
-
-nav.header > ul > li > ul {
+div.submenu {
+	background-color: #1d6559;
+	width: 200px;
+	height: 200px;
 	display: none;
+}
+
+/* COMPONENTS
+-----------------------------------------------------*/
+
+div.main-box {
+	background-color: rgba(0,0,0,0.9);
+	padding: 0.3rem 3rem;
+}
+
+/* BOOTSTRAP OVERRIDES
+-----------------------------------------------------*/
+
+div.container {
+	padding-top: 8rem;
 }

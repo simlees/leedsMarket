@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Leeds Market</title>
-		<meta name="description" content=<"Leeds Market Online Store">
+		<meta name="description" content="Leeds Market Online Store">
 		<meta name="keywords" content="leeds, university, formula, team">
 
 		<!-- FONTS -->
@@ -19,37 +19,84 @@
 
 		<!-- SCRIPTS -->
 		<script src="scripts/dropdown-menu.js"></script>
+		<script src="scripts/stall.js"></script>
 
 
 	</head>
 	<body>
 		
-		<nav class="header">
-			<ul>
-				<li><a href="home.php">Stalls</a>
-					<ul>
-						<li class="submenu"><h3>Fruit</h3>
-							<ul>
-								<li><a href='#'>Fawcetts</a></li>
-								<li><a href='#'>Brook & Sons</a></li>
-								<li><a href='#'>Howlands</a></li>
-								<li><a href='#'>Reape & Co.</a></li>
-								<li><a href='#'>Hawkings</a></li>
-							</ul>
-						</li>
-
-					</ul>
-				</li>
-				<li><a href="team.php">Products</a>
-
-				</li>
-			</ul>
-			<ul class="float-right">
-				<li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></a></span></li>
-				<li><a href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></a></span></li>
-			</ul
+		<nav id="header">
+			<div id="top-nav">
+				<ul>
+					<li><a href="" id="stalls">Stalls</a></li>
+					<li><a href="" id="products">Products</a></li>
+				</ul>
+				<ul class="float-right">
+					<li><a href="" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+					<li><a href="" id="options"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li>
+				</ul>
+			</div>
+			<div class="submenu" id="stalls-menu">
+				Stalls
+			</div>
+			<div class="submenu" id="products-menu">
+				Products<br>Products<br>Products<br>Products<br>Products
+			</div>
+			<div class="submenu float-right" id="search-menu">
+				Search
+			</div>
+			<div class="submenu float-right" id="options-menu">
+				Options
+			</div>
 		</nav>
 		<div class="container">
+			<div class="row">
+				<div class="col-md-6 stall-box">
+					<img class="stall-picture" src="media/images/stalls/fruit.jpg"/>
+					<h2>Warrick & Sons.</h2>
+					<ul class="stall-tabs">
+						<li rel="recipes">Recipes</li>
+						<li rel="info" class="active">Info</li>
+					</ul>
+					<div class="stall-box-main">
+						<ul class="stall-box-content">
+							<li class="active" id="info">
+								Infoooooooo
+							</li>
+							<li id="recipes">
+								Recipeeeees
+							</li>
+						</ul>
+						<div class="product-pictures">
+							<img src="media/images/products/apples.jpg" alt="Apples" />
+							<img src="media/images/products/oranges.jpg" alt="Apples" />
+							<img src="media/images/products/bananas.jpg" alt="Apples" />
+							<img src="media/images/products/strawberries.jpg" alt="Apples" />
+							<img src="media/images/products/pears.jpg" alt="Apples" />
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 products-box">
+					<form>
+						<input type="text" name="productsearch"/>
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></a></span>
+					</form>
+					<ul class="products-list">
+						<li>
+							<h3>Apples</h3><span class="price">£2.40</span>
+							<p>Apples are great. Not perfect by any means but pretty decent</p>
+						</li>
+						<li>
+							<h3>Oranges</h3><span class="price">£2.40</span>
+							<p>Oranges are great. Not perfect by any means but pretty decent</p>
+						</li>
+						<li>
+							<h3>Bananas</h3><span class="price">£2.40</span>
+							<p>Bananas are great. Not perfect by any means but pretty decent</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

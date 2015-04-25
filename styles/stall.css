@@ -1,0 +1,99 @@
+/* STALL BOX
+-----------------------------------------------------*/
+
+/* Header
+--------------------------------*/
+
+div.stall-box > img.stall-picture {
+	width: 150px;
+	border: 5px solid white;
+
+	position: relative;
+	left: 10px;
+	z-index: 11;
+}
+
+div.stall-box > h2 {
+	margin-left: 10px;
+	display: inline;
+	text-shadow: 1px 1px #000;
+}
+
+ul.stall-tabs {
+	list-style-type: none;
+}
+
+ul.stall-tabs > li {
+	float: right;
+	background-color: #1d6559;
+	margin-left: 0.5rem;
+	padding: 0.5rem 1rem 2rem;
+	position: relative;
+    top: -65px;
+    font-size: 2rem;
+    border-radius: 7px;
+}
+
+ul.stall-tabs > li:hover {cursor: pointer;}
+ul.stall-tabs > li.active {background-color: #4eccb9;}
+
+/* Main
+--------------------------------*/
+
+div.stall-box-main {
+	background-color: #4eccb9;
+	position: relative;
+	top: -40px;
+	z-index: 10;
+}
+
+ul.stall-box-content {
+	padding-top: 40px;
+}
+
+ul.stall-box-content > li {
+	height: 200px;	
+	list-style-type: none;
+	display: none;
+}
+
+ul.stall-box-content > li.active {
+	display: block;
+}
+
+div.product-pictures {
+	width: 100%;
+}
+
+div.product-pictures img {
+	width: 25%;
+	float: left;
+}
+
+div.product-pictures img:nth-child(1){
+	width: 50%;
+}
+
+/* PRODUCTS BOX
+-----------------------------------------------------*/
+
+div.products-box {
+	background-color: white;
+	color: black;
+}
+
+div.products-box input[type="text"],
+div.products-box input[type="text"]:focus {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	outline: none;
+}
+
+ul.products-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.products-list > li > h3 {
+	display: inline;
+}
